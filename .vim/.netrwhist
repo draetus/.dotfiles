@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/draetus/Desktop/interneting_is_hard/links_and_images/images'
-let g:netrw_dirhist_2='/home/draetus/Desktop/interneting_is_hard/hello_css'
-let g:netrw_dirhist_3='/home/draetus/.mackup'
-let g:netrw_dirhist_4='/home/draetus/workstation/.dotfiles/.mackup'
-let g:netrw_dirhist_5='/home/draetus/.vim'
-let g:netrw_dirhist_6='/home/draetus/workstation/.dotfiles/.mackup'
-let g:netrw_dirhist_7='/home/draetus/workstation/.dotfiles/.git'
