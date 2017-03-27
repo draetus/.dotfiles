@@ -164,7 +164,7 @@ exec_always sh /home/draetus/.screenlayout/dual_monitor_config.sh
 exec_always xset r rate 200 34
 
 #lockscreen
-bindsym $mod+control+l exec i3lock -i /home/draetus/.config/i3/wallpaper/i3lock_lotr.png
+bindsym $mod+control+l exec i3lock -i /home/draetus/.config/i3/wallpaper/i3lock_portal.png
 
 #setting wallpaper
 exec_always feh --bg-fill /home/draetus/.config/i3/wallpaper/the_witcher_wallpaper_2.jpg /home/draetus/.config/i3/wallpaper/the_witcher_wallpaper_1.jpg
