@@ -1,10 +1,12 @@
 My Dotfiles
 ===========
 
+Create a directory named workstation and clone this repository in there.
+
 
 
 ----------------------------
-Programs to install with i3:
+Utilities to install with i3:
 ============================
 
 
@@ -25,7 +27,7 @@ Programs to install with i3:
 
 
 ------------------------
-Vim Plugin Requirements:
+Vim Plugins Requirements:
 ========================
 
 >Do all of this before doing :PlugInstall
