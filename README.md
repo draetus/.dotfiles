@@ -14,7 +14,7 @@ Utilities to install with i3:
   
   - i3status -> Generate a string with information to be displayed in the i3bar
 
-  - dmenu -> Launch our apps in the i3 desktop
+  - rofi -> Launch our apps in the i3 desktop
   
   - i3lock -> Screen locker
  
