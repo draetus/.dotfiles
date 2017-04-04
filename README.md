@@ -20,6 +20,14 @@
 
 Other Utilities:
 
+* Mackup
+
+* Git
+
+* npm
+
+* gem
+
 ## Vim Plugins Requirements
 
 >Do all of this before doing :PlugInstall
@@ -33,6 +41,7 @@ Other Utilities:
 * In ~/.bashrc or ~/.zshrc place the following lines:
 
 BASE16_SHELL=$HOME/.config/base16-shell/
+
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 * Start a new shell and then type base16(*tab completion*) and
@@ -53,6 +62,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 * Checkers:
   * C - gcc
   * C++ - gcc
-  * html - tidy (Install it with npm)
+  * html - tidy (*Install it with npm*)
   * python - pylint,python
-  * markdown - mdl (Install it with gem)
+  * markdown - mdl (*Install it with gem*)
