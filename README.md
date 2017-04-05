@@ -18,9 +18,9 @@
 
 * conky -> Display computer information
 
-Other Utilities:
+## Other Utilities
 
-* Mackup
+* Mackup (*install it with pip*)
 
 * Git
 
