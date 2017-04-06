@@ -63,5 +63,5 @@ BASE16_SHELL=$HOME/.config/base16-shell/
   * C - gcc
   * C++ - gcc
   * html - tidy (*Install it with npm*)
-  * python - pylint,python
+  * python - flake8(*Install it with pip3 for python3 or pip2 for python2*)
   * markdown - mdl (*Install it with gem*)
