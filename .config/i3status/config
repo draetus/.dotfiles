@@ -15,6 +15,7 @@ order += "cpu_temperature 0"
 order += "cpu_temperature 1"
 #order += "cpu_temperature 2"
 #order += "cpu_temperature 3"
+order += "cpu_usage"
 order += "battery 0"
 order += "ipv6"
 order += "run_watch DHCP"
@@ -23,49 +24,75 @@ order += "run_watch VPN"
 order += "wireless _first_"
 #order += "load"
 order += "ethernet _first_"
+order += "volume master"
 order += "tztime local"
 
 
-wireless _first_ {
-        format_up = "Wireless: (%quality at %essid) %ip"
+wireless _first_ 
+{
+        format_up = "Wireless: (%quality at %essid)  | IP: %ip"
         format_down = ""
 }
 
-ethernet _first_ {
+ethernet _first_ 
+{
         # if you use %speed, i3status requires root privileges
         format_up = "Ethernet: (%speed) | IP: %ip"
         format_down = ""
 }
 
-battery 0 {
-        format = "%status %percentage %remaining"
+battery 0 
+{
+        format = "B: %status %percentage %remaining"
 	format_down = ""
 }
 
-run_watch DHCP {
+run_watch DHCP 
+{
         pidfile = "/var/run/dhclient*.pid"
 	format_down = ""
 }
 
-run_watch VPN {
+run_watch VPN 
+{
         pidfile = "/var/run/vpnc/pid"
 	format_down = ""
 }
 
-tztime local {
-        format = "%Y-%m-%d | %H:%M:%S"
+tztime local 
+{
+        format = "%d-%m-%Y | %H:%M:%S"
 }
 
-load {
-        format = "1min"
+load 
+{
+        format = "%1min"
 }
 
-disk "/" {
+disk "/" 
+{
         format = "%avail"
+	low_threshold = 5
 }
 
-ipv6 {
+ipv6 
+{
 	format_down = ""
+}
+
+cpu_usage
+{
+	format = "CPU: %usage"
+	max_threshold = 95
+}
+
+volume master
+{
+	format = "♪: %volume"
+	format_muted = "♪: MUTED (%volume)"
+	device = "default"
+	mixer = "Master"
+	mixer_idx=0
 }
 
 #----------------------------------------------------------------------------------------
@@ -73,20 +100,24 @@ ipv6 {
 cpu_temperature 0 {
  	format = "CPU 1: %degrees °C"
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp2_input" 
+	max_threshold = 80
 }
 
 cpu_temperature 1 {
 	format = "CPU 2: %degrees °C"
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp3_input"
+	max_threshold = 80
 }
 
 cpu_temperature 2 {
 	format = "CPU 3: %degrees °C"
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp4_input"
+	max_threshold = 80
 }
 
 cpu_temperature 3 {
 	format = "CPU 4: %degrees °C"
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp5_input"
+	max_threshold = 80
 }
 #----------------------------------------------------------------------------------------
