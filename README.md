@@ -16,17 +16,29 @@
 
 * feh -> Set wallpapers
 
-* conky -> Display computer information
-
 ## Other Utilities
 
-* Mackup (*install it with pip*)
+* Mackup
 
 * Git
+
+* zip 
+
+* unzip
+
+* arandr -> Configuring multi-monitor and resolution
+
+* inconsolata -> Font
+
+* xorg-server
+
+* nvidia
 
 * npm
 
 * gem
+
+* conky -> Display computer information
 
 ## Vim Plugins Requirements
 
@@ -62,6 +74,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 * Checkers:
   * C - gcc
   * C++ - gcc
-  * html - tidy (*Install it with npm*)
-  * python - flake8(*Install it with pip3 for python3 or pip2 for python2*)
-  * markdown - mdl (*Install it with gem*)
+  * html - tidy )
+  * python - flake8
+  * markdown - mdl
