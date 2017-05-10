@@ -20,11 +20,9 @@
 
 * Mackup
 
-* Git
+* Git -> Version control system
 
-* zip 
-
-* unzip
+* zip unzip -> Deal with .zip files
 
 * arandr -> Configuring multi-monitor and resolution
 
@@ -32,13 +30,17 @@
 
 * xorg-server
 
-* nvidia
+* nvidia - Video drivers
 
 * npm
 
 * gem
 
 * conky -> Display computer information
+
+* libreoffice
+
+* networkmanager network-manager-applet
 
 ## Vim Plugins Requirements
 
@@ -74,6 +76,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 * Checkers:
   * C - gcc
   * C++ - gcc
-  * html - tidy )
+  * html - tidy
   * python - flake8
   * markdown - mdl
