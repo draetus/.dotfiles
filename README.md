@@ -40,7 +40,9 @@
 
 * libreoffice
 
-* networkmanager network-manager-applet
+* networkmanager network-manager-applet - Network Manager
+
+* Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh) - Base configuration for Zsh
 
 ## Vim Plugins Requirements
 

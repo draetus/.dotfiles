@@ -173,5 +173,5 @@ bindsym $mod+control+l exec i3lock -i ~/.config/i3/wallpaper/i3lock_portal.png
 #setting wallpaper
 exec_always feh --bg-fill ~/.config/i3/wallpaper/the_witcher_wallpaper_2.jpg ~/.config/i3/wallpaper/the_witcher_wallpaper_1.jpg
 
-#network manager applet
+#Network Manager Applet
 exec_always nm-applet
