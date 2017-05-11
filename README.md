@@ -44,6 +44,8 @@
 
 * Oh My Zsh (https://github.com/robbyrussell/oh-my-zsh) - Base configuration for Zsh
 
+* sddm -> Login Manager
+
 ## Vim Plugins Requirements
 
 >Do all of this before doing :PlugInstall

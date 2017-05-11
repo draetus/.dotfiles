@@ -16,8 +16,8 @@ pacman -S python3 python2
 
 print "_______________________Installing Mackup_______________________"
 pip2 install mackup
-rm ~/.mackup.cfg
-rm -rf ~/.mackup/
+/rm ~/.mackup.cfg
+/rm -rf ~/.mackup/
 cp ~/workstation/.dotfiles/.mackup.cfg ~/
 cp -r ~/workstation/.dotfiles/.mackup/ ~/
 
