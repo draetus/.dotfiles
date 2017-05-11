@@ -164,14 +164,14 @@ exec_always setxkbmap br
 
 #----------------------------------------------------------------------------------------
 
-#configuring dual_monitor - modify the below file to change resolution and monitor position
-exec_always sh ~/workstation/.dotfiles/.config/i3/.screenlayout/dual_monitor_config.sh
+#Configuring the monitor
+exec_always sh ~/.screenlayout/monitor_config.sh
 
-#lockscreen
+#Lockscreen
 bindsym $mod+control+l exec i3lock -i ~/.config/i3/wallpaper/i3lock_portal.png
 
-#setting wallpaper
+#Setting wallpaper
 exec_always feh --bg-fill ~/.config/i3/wallpaper/the_witcher_wallpaper_2.jpg ~/.config/i3/wallpaper/the_witcher_wallpaper_1.jpg
 
-#Network Manager Applet
+#Network manager applet
 exec_always nm-applet
