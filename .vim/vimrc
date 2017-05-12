@@ -7,6 +7,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer'}
 Plug 'hail2u/vim-css3-syntax'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
