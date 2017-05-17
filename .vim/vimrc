@@ -53,6 +53,7 @@ let g:syntastic_html_checkers = ["tidy"]                    "Checker for HTML
 
 
 let g:ycm_show_diagnostics_ui = 0                 "Stop blocking checkers for syntastic
+let g:ycm_autoclose_preview_window_after_insertion = 1 "Info block disappear after insertion
 
 
 "-----------------------------------------------------------------------------------"

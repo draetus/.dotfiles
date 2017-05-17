@@ -46,6 +46,8 @@
 
 * sddm -> Login Manager
 
+* libtinfo
+
 ## Vim Plugins Requirements
 
 >Do all of this before doing :PlugInstall
