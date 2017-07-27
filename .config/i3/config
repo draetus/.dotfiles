@@ -149,8 +149,9 @@ exec_always setxkbmap br
 
 #----------------------------------------------------------------------------------------
 
-#Disabling automatic mouse focus
+#Disabling automatic mouse focus and mouse warping
 focus_follows_mouse no
+mouse_warping none
 
 #Configuring the monitor
 exec_always sh ~/.screenlayout/monitor_config.sh
