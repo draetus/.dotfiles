@@ -24,6 +24,8 @@
 
 * zip unzip -> Deal with .zip files
 
+* pip -> Python package manager
+
 * arandr -> Configuring multi-monitor and resolution
 
 * inconsolata -> Font
@@ -47,6 +49,8 @@
 * sddm -> Login Manager
 
 * libtinfo
+
+* Zeal -> An offline API documentation browser
 
 ## Vim Plugins Requirements
 
