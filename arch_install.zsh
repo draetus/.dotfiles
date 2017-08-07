@@ -72,10 +72,15 @@ print "_______________________Installing Libtinfo_______________________"
 \cd ~/workstation/.dotfiles/libtinfo
 makepkg -si
 ln -sf /usr/lib/libtinfo.so.6 /usr/lib/libtinfo.so.5
+\cd ~/
 
 
 print "_______________________Installing Oh My Zsh_______________________"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+print "_______________________Installing Zeal_______________________"
+pacman -S zeal
 
 
 print "_________________________________________________________"
@@ -104,3 +109,7 @@ mackup restore
 
 print "_______________________Updating System_______________________"
 pacman -Syu
+
+
+print "_______________________configure your own monitor config_______________________"
+arandr
