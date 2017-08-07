@@ -11,7 +11,7 @@ pacman -S curl
                                                                                           
  
 print "_______________________Installing Python_______________________"
-pacman -S python3 python2
+pacman -S python3 python2 python-pip python2-pip
 
 
 print "_______________________Installing Mackup_______________________"
