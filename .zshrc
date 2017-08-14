@@ -93,4 +93,5 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias open='xdg-open'
 #-------------------------------------------------------------------------#
