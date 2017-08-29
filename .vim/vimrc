@@ -8,6 +8,7 @@ Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer'}
 Plug 'hail2u/vim-css3-syntax'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
