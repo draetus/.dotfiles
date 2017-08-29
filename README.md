@@ -52,6 +52,14 @@
 
 * Zeal -> An offline API documentation browser
 
+* OpenCV -> Open Source Computer Vision Library
+
+## Installing OpenCV (Archlinux)
+
+* pacman -Syu base-devel opencv opencv-samples
+
+* Download this package https://www.archlinux.org/packages/community/x86_64/hdf5/
+
 ## Vim Plugins Requirements
 
 >Do all of this before doing :PlugInstall
