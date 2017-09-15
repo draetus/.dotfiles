@@ -94,4 +94,5 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias open='xdg-open'
+alias g++opencv="g++ `pkg-config --cflags --libs opencv`"
 #-------------------------------------------------------------------------#
