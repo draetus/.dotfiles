@@ -54,6 +54,8 @@
 
 * OpenCV -> Open Source Computer Vision Library
 
+* deepin-screenshot -> Utility used to take screenshots
+
 ## Installing OpenCV (Archlinux)
 
 * pacman -Syu base-devel opencv opencv-samples
