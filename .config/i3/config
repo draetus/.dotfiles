@@ -156,11 +156,16 @@ mouse_warping none
 #Configuring the monitor
 exec_always sh ~/.screenlayout/monitor_config.sh
 
-#Lockscreen
-bindsym $mod+control+l exec i3lock -i ~/.config/i3/wallpaper/i3lock_portal.png
-
 #Setting wallpaper
 exec_always feh --bg-fill ~/.config/i3/wallpaper/the_witcher_wallpaper_2.jpg ~/.config/i3/wallpaper/the_witcher_wallpaper_1.jpg
 
 #Network manager applet
 exec_always nm-applet
+
+#-------------------------------HOTKEYS--------------------------------------------------
+
+#Lockscreen
+bindsym $mod+control+l exec i3lock -i ~/.config/i3/wallpaper/i3lock_portal.png
+
+#Print Screen
+bindsym F12 exec deepin-screenshot
