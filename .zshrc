@@ -93,6 +93,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
-alias open='xdg-open'
+alias open='feh'
 alias g++opencv="g++ `pkg-config --cflags --libs opencv`"
 #-------------------------------------------------------------------------#
