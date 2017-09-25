@@ -1,5 +1,5 @@
 root = True
 
-[*.{html,css,py}]
+[*.{html,css,py,cpp,c}]
 indent_style = space
 indent_size = 4
