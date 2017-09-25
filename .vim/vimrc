@@ -17,8 +17,14 @@ call plug#end()
 
 "--------------------------------Shortcuts-------------------------------------------"
 
-autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./a.out && cd ..
-autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
+"Open or close NERDTree
+map <C-n> :NERDTreeToggle<CR>
+"Open ctrlp
+map <F3> :CtrlP<CR>
+"Compile and Run Cmake project
+autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./a.out && cd ..<CR>
+"Rebuild and Compile Cmake project
+autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd ..<CR>
 
 "-----------------------------------------------------------------------------------"
 
@@ -74,6 +80,3 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif  "Open NERDTree automatically if vim starts up with no file specified
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif "Open NERDTree automatically if vim opens a directory
-
-"Shortcut to open or close NERDTree
-map <C-n> :NERDTreeToggle<CR>
