@@ -17,7 +17,7 @@ call plug#end()
 
 "--------------------------------Shortcuts-------------------------------------------"
 
-autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./demo1 && cd ..
+autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./a.out && cd ..
 autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
 
 "-----------------------------------------------------------------------------------"
@@ -66,6 +66,7 @@ let g:syntastic_html_checkers = ["tidy"]                    "Checker for HTML
 let g:ycm_show_diagnostics_ui = 0                 "Stop blocking checkers for syntastic
 let g:ycm_autoclose_preview_window_after_insertion = 1 "Info block disappear after insertion
 let g:ycm_python_binary_path = '/usr/bin/python2'
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 
 "--------------------------------NerdTree Configs-------------------------------------"
