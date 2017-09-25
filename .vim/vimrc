@@ -15,8 +15,12 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 
-"------------------------------------------------------------------------------------"
+"--------------------------------Shortcuts-------------------------------------------"
 
+autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./demo1 && cd ..
+autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd ..
+
+"-----------------------------------------------------------------------------------"
 
 filetype on 
 syntax on                           "Syntax highlighting based on file names
