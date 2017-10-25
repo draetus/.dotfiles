@@ -22,9 +22,9 @@ map <C-n> :NERDTreeToggle<CR>
 "Open ctrlp
 map <F3> :CtrlP<CR>
 "Compile and Run Cmake project
-autocmd FileType cpp map <F9> :! cd build && cmake .. && make && ./a.out && cd ..<CR>
+autocmd FileType cpp map <F9> :! cd build && make && cd .. && mv build/a.out . && ./a.out<CR>
 "Rebuild and Compile Cmake project
-autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd ..<CR>
+autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd .. && mv build/a.out .<CR>
 
 "-----------------------------------------------------------------------------------"
 
