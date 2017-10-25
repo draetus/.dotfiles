@@ -10,7 +10,7 @@ print "_______________________Installing Curl_______________________"
 pacman -S curl                                                                            
                                                                                           
  
-print "_______________________Installing Python_______________________"
+print "____________________Installing Python(2-3)_____________________"
 pacman -S python3 python2 python-pip python2-pip
 
 
@@ -69,13 +69,27 @@ pacman -S curl
 
 
 print "_______________________Installing Libtinfo_______________________"
-\cd ~/workstation/.dotfiles/libtinfo
+\cd ~/workstation/.dotfiles/aur_packages/libtinfo
 makepkg -si
 ln -sf /usr/lib/libtinfo.so.6 /usr/lib/libtinfo.so.5
 \cd ~/
 
 
+print "_______________________Installing Package Query_______________________"
+\cd ~/workstation/.dotfiles/aur_packages/package-query
+makepkg -si
+\cd ~/
+
+
+print "_______________________Installing yaourt_______________________"
+\cd ~/workstation/.dotfiles/aur_packages/yaourt
+makepkg -si
+\cd  ~/
+
+
 print "_______________________Installing Oh My Zsh_______________________"
+pacman -S zsh
+chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
@@ -83,7 +97,7 @@ print "_______________________Installing Zeal_______________________"
 pacman -S zeal
 
 
-print "_______________________Installing Zeal_______________________"
+print "_______________________Installing Deepin Screenshot_______________________"
 pacman -S deepin-screenshot
 
 
@@ -115,5 +129,5 @@ print "_______________________Updating System_______________________"
 pacman -Syu
 
 
-print "_______________________configure your own monitor config_______________________"
+print "_______________________Configure your own monitor config_______________________"
 arandr

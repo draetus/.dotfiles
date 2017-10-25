@@ -56,6 +56,10 @@
 
 * deepin-screenshot -> Utility used to take screenshots
 
+* yaourt -> A Wrapper for the AUR(Archlinux User Repository) and regular packages
+
+* package-query
+
 ## Installing OpenCV (Archlinux)
 
 * pacman -Syu base-devel opencv opencv-samples
@@ -83,7 +87,7 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 ### Youcompleteme
 
-* Install development tools ad CMAKE:
+* Install development tools and CMAKE:
   * build-essential
   * cmake
 
