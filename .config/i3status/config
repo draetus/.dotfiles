@@ -11,29 +11,34 @@ general {
         interval = 5
 }
 
-order += "cpu_temperature 0"
-order += "cpu_temperature 1"
-#order += "cpu_temperature 2"
+# CPU_Temperature is optional, and it has to be setted manually, you need to find the 
+# files that show the temperatura.
+
+#order += "cpu_temperature 0"          #Shows the cpus temperature
+#order += "cpu_temperature 1"          #You need to manually put the filenames in the path
+#order += "cpu_temperature 2"          #The filenames should look like the ones I putted in there
 #order += "cpu_temperature 3"
-order += "cpu_usage"
-order += "battery 0"
-order += "ipv6"
-order += "run_watch DHCP"
-order += "disk /"
-order += "run_watch VPN"
-order += "wireless _first_"
-#order += "load"
-order += "ethernet _first_"
-order += "volume master"
-order += "tztime local"
+order += "cpu_usage"                #Shows the total CPU usage
+order += "battery 0"                #Shows battery
+order += "ipv6"                     #Shows IPV6
+order += "run_watch DHCP"           #Shows if DHCP is running
+order += "disk /"                   #Shows the available space in disk
+order += "run_watch VPN"            #Shows if a VPN is being used
+order += "wireless _first_"         #Shows if you're using wifi
+#order += "load"                    #Gets the system load(Number of processes waiting for CPU time in the last 1 minute)
+order += "ethernet _first_"         #Shows the speed of the ethernet
+order += "volume master"            #Shows master volume
+order += "tztime local"             #Shows the current local time
 
 
+#Only shows up if it has wireless connection
 wireless _first_ 
 {
         format_up = "Wireless: (%quality at %essid)  | IP: %ip"
         format_down = ""
 }
 
+#Only shows up if it has ethernet connection
 ethernet _first_ 
 {
         # if you use %speed, i3status requires root privileges
@@ -41,51 +46,63 @@ ethernet _first_
         format_down = ""
 }
 
+#Only shows up if it has battery
 battery 0 
 {
         format = "B: %status %percentage %remaining"
 	format_down = ""
 }
 
+#Only shows up if it has some DHCP running
 run_watch DHCP 
 {
         pidfile = "/var/run/dhclient*.pid"
 	format_down = ""
 }
 
+#Only shows up if it has some VPN running
 run_watch VPN 
 {
         pidfile = "/var/run/vpnc/pid"
 	format_down = ""
 }
 
+#Shows the current time
 tztime local 
 {
         format = "%d-%m-%Y | %H:%M:%S"
 }
 
+#Shows the number of processes waiting for CPU in the last minute
 load 
 {
         format = "%1min"
 }
 
+#Shows total available disk space (in relation to root partition)
 disk "/" 
 {
         format = "%avail"
 	low_threshold = 5
 }
 
+#Only shows up if it has some ipv6
 ipv6 
 {
 	format_down = ""
 }
 
+#Shows the total CPU usage
+#max_threshold could be activated, it changes the color of the info
+#if it gets above the specified value, but can cause some problems in
+#certain systems, that's why it's disabled by default
 cpu_usage
 {
 	format = "CPU: %usage"
-	max_threshold = 95
+	#max_threshold = 95
 }
 
+#Shows the master volume
 volume master
 {
 	format = "♪: %volume"
