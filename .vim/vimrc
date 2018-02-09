@@ -19,31 +19,50 @@ call plug#end()
 
 "Open or close NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
 "Open ctrlp
 map <F3> :CtrlP<CR>
+
 "Compile and Run Cmake project
 autocmd FileType cpp map <F9> :! cd build && make && cd .. && mv build/a.out . && ./a.out<CR>
 "Rebuild and Compile Cmake project
 autocmd FileType cpp map <F10> :! rm -rf build && mkdir build && cd build && cmake .. && make && cd .. && mv build/a.out .<CR>
 
-"-----------------------------------------------------------------------------------"
+"Turn off search highlight
+map <C-c> :nohlsearch<CR>
+
+nnoremap<leader>u :GundoToggle<CR>
+
+"--------------------------------Vim Configs------------------------------------------"
 
 filetype on 
 syntax on                           "Syntax highlighting based on file names
 
-colorscheme base16-monokai
+colorscheme base16-monokai          "Sets the colorscheme
 let base16colorspace=256            "Access colors present in 256 colorspace
-set background=dark
+set background=dark                 "Sets the background
 
 set guifont=Monaco\ 12              "Setting the font
 
+"Window configuration
 set number
 set lines=63 columns=90
 set colorcolumn=90
 
+"set showcmd                         "Shows last command in bottom right
+set cursorline                       "Highlight current line
+set wildmenu                         "Shows the tab options
+set lazyredraw                       "Redraw screen only when needed
+set showmatch                        "highlight matching [{()}]
+
+set incsearch                        "Search as characters are entered
+set hlsearch                         "Highlight search matches
+
+"move vertically by visual line
+nnoremap j gj
+nnoremap k gk
 
 "--------------------------------Syntastic Configs-----------------------------------"
-
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
