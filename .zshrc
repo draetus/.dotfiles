@@ -96,6 +96,8 @@ export HISTFILE=/home/$USER/.history/.zsh_history
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias sl='ls'
+alias mkdir='mkdir -v'
 alias open='feh'
-alias g++opencv="g++ `pkg-config --cflags --libs opencv`"
+alias showsize='ncdu'
 #-------------------------------------------------------------------------#
