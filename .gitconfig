@@ -3,3 +3,5 @@
 	name = Draetus
 [alias]
 	st = status
+	cm = commit
+	lg = log
