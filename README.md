@@ -60,6 +60,8 @@
 
 * package-query
 
+* SimpleScreenRecorder -> A tool that can record video from screen
+
 ## Installing OpenCV (Archlinux)
 
 * pacman -Syu base-devel opencv opencv-samples
