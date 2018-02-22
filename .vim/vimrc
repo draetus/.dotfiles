@@ -99,3 +99,6 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif  "Open NERDTree automatically if vim starts up with no file specified
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif "Open NERDTree automatically if vim opens a directory
+let g:NERDTreeMapOpenInTab='<ENTER>' "Opens the file automatically in a new tab
+let g:NERDTreeQuitOnOpen = 1 "Close NERDTree tab when opening a file 
+let g:NERDTreeShowHidden = 1 "Show hidden files
