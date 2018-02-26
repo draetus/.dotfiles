@@ -5,15 +5,15 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/syntastic'
-Plug 'valloric/youcompleteme', {'do': './install.py --clang-completer'}
-Plug 'hail2u/vim-css3-syntax'
+Plug 'valloric/youcompleteme',          { 'do' :     './install.py --clang-completer' }
+Plug 'hail2u/vim-css3-syntax',          { 'for':     ['css', 'html']                  }
 Plug 'editorconfig/editorconfig-vim'
-Plug 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim',                  { 'on' :     'CtrlP'                          }
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'Nopik/vim-nerdtree-direnter'
 
-call plug#end()
+call plug#end() 
 
 
 "--------------------------------Shortcuts-------------------------------------------"
