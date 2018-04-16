@@ -64,10 +64,6 @@ pacman -S sddm
 systemctl enable sddm.service                                                             
 
 
-print "_______________________Installing Curl_______________________"
-pacman -S curl
-
-
 print "_______________________Installing Libtinfo_______________________"
 \cd ~/workstation/.dotfiles/aur_packages/libtinfo
 makepkg -si
@@ -91,10 +87,6 @@ print "_______________________Installing Oh My Zsh_______________________"
 pacman -S zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-
-print "_______________________Installing Zeal_______________________"
-pacman -S zeal
 
 
 print "_______________________Installing Deepin Screenshot_______________________"
