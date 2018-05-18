@@ -94,6 +94,7 @@ let g:syntastic_cpp_checkers = ["gcc"]                      "Checker for C++
 let g:syntastic_c_checkers = ["gcc"]                        "Checker for C
 
 let g:syntastic_html_checkers = ["tidy"]                    "Checker for HTML
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"] "Disabling some errors
 
 
 "--------------------------------YouCompleteMe Configs-------------------------------"
